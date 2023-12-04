@@ -1,4 +1,4 @@
-const getAccessToken = async () => {
+export const getAccessToken = async () => {
     const authOptions = {
         method: 'POST',
         headers: {

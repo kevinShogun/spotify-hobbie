@@ -25,3 +25,23 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.glass  {
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(242, 242, 242, 0.42);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(242, 242, 242, 0.36);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+border: 1px solid rgba(242, 242, 242, 0.36);
+}
+
+.dgHtml > a {
+  color: rgb(var(--foreground-rgb));
+}
+
+.dgHtml > a:hover {
+  color: rgb(var(--foreground-rgb));
+  text-decoration: underline;
+}

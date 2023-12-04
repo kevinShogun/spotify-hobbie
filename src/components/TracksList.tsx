@@ -15,6 +15,9 @@ export const TracksList = ({ album, isOpen }: any) => {
                     setShow(!show)
                     isOpen(!show)
                 }}
+                style={{
+                    display: album.tracks ? 'block' : 'none'
+                }}
             >
                 {show ? 'Hide tracks' : 'Show tracks'}
             </button>
@@ -22,7 +25,7 @@ export const TracksList = ({ album, isOpen }: any) => {
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-3 mt-2`}
             >
                 {
-                    album.tracks.items && album.tracks.items.map((track: any) => {
+                    album.tracks && album.tracks.items.map((track: any) => {
                         return (
                             <div
                                 key={track.id}
